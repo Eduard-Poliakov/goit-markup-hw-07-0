@@ -12,6 +12,13 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.link:focus,
+.link:hover,
+.link-current {
+  color: $a_color;
+  fill: $a_color;
+}
+
 .navig .link-current::after {
   content: "";
   position: absolute;
@@ -32,18 +39,6 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact .icon {
-  margin-right: 10px;
-  overflow: visible;
-}
-
-.link:focus,
-.link:hover,
-.link-current {
-  color: $a_color;
-  fill: $a_color;
-}
-
 .navig {
   display: flex;
 
@@ -59,6 +54,11 @@
 
 .contact {
   margin-left: auto;
+
+  .icon {
+    margin-right: 10px;
+    overflow: visible;
+  }
 }
 
 .style-header {

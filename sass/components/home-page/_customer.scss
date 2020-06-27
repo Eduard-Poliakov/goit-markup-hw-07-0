@@ -3,24 +3,24 @@
 section.customer {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.customer h2 {
-  margin-top: 0;
-  margin-bottom: 50px;
-}
+  h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
 
-.customer ul {
-  display: flex;
-  padding: 0;
-}
+  ul {
+    display: flex;
+    padding: 0;
+  }
 
-.customer li {
-  width: calc((100% - 30px * 5) / 6);
-}
+  li {
+    width: calc((100% - 30px * 5) / 6);
+  }
 
-.customer li + li {
-  margin-left: 30px;
+  li + li {
+    margin-left: 30px;
+  }
 }
 
 .customer-link {
@@ -29,6 +29,7 @@ section.customer {
   align-items: center;
   width: 170px;
   height: 90px;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
@@ -36,10 +37,10 @@ section.customer {
   transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.customer-link:hover,
-.customer-link:focus {
-  border: 1px solid $a_color;
-  fill: $a_color;
+  &:hover,
+  &:focus {
+    border: 1px solid $a_color;
+    fill: $a_color;
+  }
 }

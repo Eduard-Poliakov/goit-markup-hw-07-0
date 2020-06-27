@@ -11,17 +11,17 @@
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
-}
 
-.subscription p {
-  margin-bottom: 30px;
-  margin-top: 0;
+  p {
+    margin-bottom: 30px;
+    margin-top: 0;
 
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+  }
 }
 
 .field {
@@ -41,6 +41,11 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+
+  &:focus {
+    border: 1px solid $a_color;
+    outline: none;
+  }
 }
 
 .field-text {
@@ -81,11 +86,6 @@ form textarea {
   color: $a_color;
 }
 
-.field-entry:focus {
-  border: 1px solid $a_color;
-  outline: none;
-}
-
 .field-icon {
   position: absolute;
   top: 50%;
@@ -105,11 +105,11 @@ form textarea {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $s_color;
-}
 
-.conditions a {
-  text-decoration: underline;
-  color: $a_color;
+  a {
+    text-decoration: underline;
+    color: $a_color;
+  }
 }
 
 form button {
@@ -132,6 +132,11 @@ form button {
   padding: 6px;
   box-shadow: none;
   background-color: $p_b_color;
+
+  &:focus,
+  &:hover {
+    fill: $a_color;
+  }
 }
 
 .close-icon {
@@ -144,10 +149,6 @@ form button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close:focus,
-.close:hover {
-  fill: $a_color;
-}
 .icon-check {
   content: " ";
   display: inline-block;
