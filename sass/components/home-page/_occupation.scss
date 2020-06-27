@@ -1,0 +1,45 @@
+/* Род занятий */
+
+section.occupation {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.occupation h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.occupation ul {
+  display: flex;
+  padding: 0;
+}
+
+.occupation li + li {
+  margin-left: 30px;
+}
+
+.occupation li {
+  width: calc((100% - 30px * 2) / 3);
+  position: relative;
+}
+
+.occupation h3 {
+  color: $p_b_color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.description {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
